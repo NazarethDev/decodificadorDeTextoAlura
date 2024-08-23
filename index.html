@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" type="text/css" href="resetCSS.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<header class="header">
+    <img class="header__img" src="./assets/aluraBlackAndWhite.png" alt="logo da Alura">
+</header>
+<body class="body">
+    <main class="main">
+        <section class="main__lado__esquerdo">
+            <div class="main__lado__esquerdo__div">
+                <textarea name="textoacriptografar" class="main__lado__esquerdo__textarea" id="textoParaCriptografar" placeholder="Digite o texto que deseja criptografar ou descriptografar"></textarea>
+                <p class="texto__antes__botoes__lado__esquerdo">Insira apenas letras minúsculas sem acento.</p>
+                <div class="botoes__lado__esquerdo">
+                    <button class="botao__lado__esquerdo" type="button" onclick="criptografar()" id="criptografar">Criptografar</button>
+                    <button class="botao__lado__esquerdo" type="button" onclick="descriptografar()" id="descriptografar">Descriptografar</button>
+                </div>  
+            </div>
+        </section>
+        <section class="main__lado__direito">
+            <div class="mensagem__antes__criptografia" id="mensagemAntesCriptografia">
+                <img class="imagem__antes__criptografia" src="./assets/lupafinal.png" alt="lupa">
+                <p class="sem__mensagem__criptgrafia">Nenhuma mensagem encontrada.</p>
+                <p class="pedido__mensagem__criptogafia">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="mensagem__depois__criptografia" id="mensagemDepoisCriptografia">
+                <p class="texto__tratado" id="textoTratado"></p>
+                <button class="botao__lado__direito" type="button" onclick="copiarTexto()" id="copiaTexto">Copiar texto</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="texto__footer">developed by Nazareth</p>
+    </footer>
+</body>
+</html>
